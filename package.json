@@ -1,0 +1,26 @@
+{
+  "name": "cypressjenkinsemilio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --e2e --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmiliolZ/CypressJenkinsEmilio.git"
+  },
+  "keywords": [
+    "jenkins",
+    "cypress"
+  ],
+  "author": "Darwoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmiliolZ/CypressJenkinsEmilio/issues"
+  },
+  "homepage": "https://github.com/EmiliolZ/CypressJenkinsEmilio#readme",
+  "dependencies": {
+    "cypress": "^13.6.2"
+  }
+}
