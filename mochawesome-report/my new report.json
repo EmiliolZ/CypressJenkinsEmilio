@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-01-09T14:58:00.719Z",
+    "end": "2024-01-09T14:58:04.257Z",
+    "duration": 3538,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "71a386ef-7483-404b-8aea-b6e84e2163f7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test.cy.js",
+      "file": "cypress\\e2e\\test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+          "title": "Test de pruebas para Jenkis",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test que pasa",
+              "fullTitle": "Test de pruebas para Jenkis Test que pasa",
+              "timedOut": null,
+              "duration": 609,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "f5769ffb-b1fd-42f7-9a90-951e526e3dc1",
+              "parentUUID": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test que falla",
+              "fullTitle": "Test de pruebas para Jenkis Test que falla",
+              "timedOut": null,
+              "duration": 235,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');\ncy.get('h1').shoul(\"have.text\", \"Hola hola\");",
+              "err": {
+                "message": "TypeError: cy.get(...).shoul is not a function",
+                "estack": "TypeError: cy.get(...).shoul is not a function\n    at Context.eval (webpack://cypressjenkinsemilio/./cypress/e2e/test.cy.js:7:17)",
+                "diff": null
+              },
+              "uuid": "a27f81de-ff62-4015-bdfc-246774135f1f",
+              "parentUUID": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test que no se ejecuta",
+              "fullTitle": "Test de pruebas para Jenkis Test que no se ejecuta",
+              "timedOut": null,
+              "duration": 163,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "5a3a8504-7d65-448a-a704-ba061c62253c",
+              "parentUUID": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f5769ffb-b1fd-42f7-9a90-951e526e3dc1",
+            "5a3a8504-7d65-448a-a704-ba061c62253c"
+          ],
+          "failures": [
+            "a27f81de-ff62-4015-bdfc-246774135f1f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1007,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "my new report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterDir": "reports",
+        "reportFilename": "my new report",
+        "JSON": true,
+        "html": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/EmiliolZ/CypressJenkinsEmilio#readme",
   "dependencies": {
-    "cypress": "^13.6.2"
+    "cypress": "^13.6.2",
+    "mochawesome": "^7.1.3"
   }
 }
