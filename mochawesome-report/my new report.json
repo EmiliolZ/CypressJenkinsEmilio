@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2024-01-09T14:58:00.719Z",
-    "end": "2024-01-09T14:58:04.257Z",
-    "duration": 3538,
+    "start": "2024-01-16T19:33:49.466Z",
+    "end": "2024-01-16T19:33:52.239Z",
+    "duration": 2773,
     "testsRegistered": 3,
     "passPercent": 66.66666666666666,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "71a386ef-7483-404b-8aea-b6e84e2163f7",
+      "uuid": "73fb6409-a1a7-46c7-b0b4-58a9da950c9e",
       "title": "",
       "fullFile": "cypress\\e2e\\test.cy.js",
       "file": "cypress\\e2e\\test.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+          "uuid": "52314054-915e-46aa-98a2-a9445f4c7096",
           "title": "Test de pruebas para Jenkis",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Test que pasa",
               "fullTitle": "Test de pruebas para Jenkis Test que pasa",
               "timedOut": null,
-              "duration": 609,
+              "duration": 391,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit('https://example.cypress.io');",
               "err": {},
-              "uuid": "f5769ffb-b1fd-42f7-9a90-951e526e3dc1",
-              "parentUUID": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+              "uuid": "068f60e1-82e8-4ac1-96aa-2781ab593b1d",
+              "parentUUID": "52314054-915e-46aa-98a2-a9445f4c7096",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Test que falla",
               "fullTitle": "Test de pruebas para Jenkis Test que falla",
               "timedOut": null,
-              "duration": 235,
+              "duration": 252,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,8 +69,8 @@
                 "estack": "TypeError: cy.get(...).shoul is not a function\n    at Context.eval (webpack://cypressjenkinsemilio/./cypress/e2e/test.cy.js:7:17)",
                 "diff": null
               },
-              "uuid": "a27f81de-ff62-4015-bdfc-246774135f1f",
-              "parentUUID": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+              "uuid": "5960dfc7-42d0-45e8-aaae-7d162bcb22f7",
+              "parentUUID": "52314054-915e-46aa-98a2-a9445f4c7096",
               "isHook": false,
               "skipped": false
             },
@@ -78,7 +78,7 @@
               "title": "Test que no se ejecuta",
               "fullTitle": "Test de pruebas para Jenkis Test que no se ejecuta",
               "timedOut": null,
-              "duration": 163,
+              "duration": 134,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -87,23 +87,23 @@
               "context": null,
               "code": "cy.visit('https://example.cypress.io');",
               "err": {},
-              "uuid": "5a3a8504-7d65-448a-a704-ba061c62253c",
-              "parentUUID": "fa11fd85-24d9-4594-8571-a45bdbf12132",
+              "uuid": "590f231e-34eb-4c0d-8772-4b35b17678ff",
+              "parentUUID": "52314054-915e-46aa-98a2-a9445f4c7096",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f5769ffb-b1fd-42f7-9a90-951e526e3dc1",
-            "5a3a8504-7d65-448a-a704-ba061c62253c"
+            "068f60e1-82e8-4ac1-96aa-2781ab593b1d",
+            "590f231e-34eb-4c0d-8772-4b35b17678ff"
           ],
           "failures": [
-            "a27f81de-ff62-4015-bdfc-246774135f1f"
+            "5960dfc7-42d0-45e8-aaae-7d162bcb22f7"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1007,
+          "duration": 777,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
