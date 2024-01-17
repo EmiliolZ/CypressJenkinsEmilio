@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "{npx cypress run --e2e --browser chrome || ver >nul}"
+    "test": "{npx cypress run --e2e --browser chrome || ver >nul}",
+    "generateTxt": "node generateConsoleReport.js",
+    "runAndgenerate": "(npx cypress run --e2e --browser chrome || ver >nul) && (node generateConsoleReport.js)"
     
   },
   "repository": {
