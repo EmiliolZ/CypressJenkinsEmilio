@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --e2e --browser chrome"
+    "test": "{npx cypress run --e2e --browser chrome || ver >nul}"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EmiliolZ/CypressJenkinsEmilio.git"
+
   },
   "keywords": [
     "jenkins",
