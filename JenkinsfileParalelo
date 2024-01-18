@@ -8,34 +8,32 @@ pipeline {
             }
         }
 
-        stage('Ejecucion de test') {
-            parallel {
-                  stage('Ejecucion en chrome'){
-                    steps{
-                       script {
+      stage('Ejecucion de test') {
+    parallel {
+        stage('Ejecucion en chrome') {
+            steps {
+                script {
                     try {
                         bat 'npx cypress run --e2e --browser chrome'
                     } catch (Exception e) {
                         currentBuild.result = 'SUCCESS'
-                       
                     }
                 }
             }
         }
-        stage('Ejecucion en Firefox'){
-                    steps{
-                       script {
+        stage('Ejecucion en Firefox') {
+            steps {
+                script {
                     try {
-                        bat 'npx cypress run --e2e --browser chrome'
+                        bat 'npx cypress run --e2e --browser firefox'
                     } catch (Exception e) {
                         currentBuild.result = 'SUCCESS'
-        
-                     }
-                  }
-              }
+                    }
+                }
             }
         }
     }
+}
             steps {
                 script {
                     try {
