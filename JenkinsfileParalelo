@@ -30,9 +30,12 @@ pipeline {
                     } catch (Exception e) {
                         currentBuild.result = 'SUCCESS'
         
-                    }
+                     }
                   }
+              }
             }
+        }
+    }
             steps {
                 script {
                     try {
@@ -45,12 +48,16 @@ pipeline {
             }
         }
 
+    
+
+    }
+
         stage('Generar Logs y reporte TXT') {
             steps {
                 bat 'node generateConsoleReport.js'
             }
         }
-    }
+    
 
     post {
         success {
@@ -60,4 +67,3 @@ pipeline {
             echo '¡El pipeline falló!'
         }
     }
-}
